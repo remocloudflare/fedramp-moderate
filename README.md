@@ -96,14 +96,16 @@ See `ONBOARDING-CHECKLIST.md` for the full operator gate.
 
 ## API token permissions
 
+![FedRAMP Moderate Terraform token permissions and control flow](docs/architecture/fedramp-moderate-terraform-permissions-and-control-flow.svg)
+
 **Interactive diagrams:** the repository includes both playable HTML files under [`docs/architecture/`](docs/architecture/). Download or clone the repository, then open either file in a browser:
 
 - [`fedramp-moderate-permissions.html`](docs/architecture/fedramp-moderate-permissions.html) — token recipes, guided permission views, search, light/dark themes, and presentation mode.
 - [`fedramp-moderate-apply-flow.html`](docs/architecture/fedramp-moderate-apply-flow.html) — the end-to-end Terraform configure, authorize, apply, and read-back animation.
 
-GitHub does not execute JavaScript from repository HTML previews, so download or clone the repository and open an HTML file locally to play it. Only the self-contained HTML artifacts are published; the Archify source, SVG, GIF, MP4, and capture files remain local and Git-ignored.
+GitHub renders the checked-in SVG above directly in this README. It does not execute JavaScript from repository HTML previews, so download or clone the repository and open an HTML file locally to use its guided animation. The Archify source, GIF, MP4, and capture files remain local and Git-ignored.
 
-Create a **Custom API Token** in the normal Cloudflare dashboard. The linked permissions HTML is the complete visual recipe: it shows the exact permission scope, permission, access level, and resource restriction for both the current CMB-only deployment and the optional full-module features.
+Create a **Custom API Token** in the normal Cloudflare dashboard. The graphic above and linked permissions HTML show the exact permission scope, permission, access level, and resource restriction for both the current CMB-only deployment and the optional full-module features.
 
 Do not add DNS or SSO permissions merely to make the CMB apply work. They are feature-gated and unnecessary while both optional feature flags are `false`.
 

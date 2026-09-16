@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">FedRAMP Moderate Terraform API token recipes</title>
+  <desc id="desc">Required CMB permissions are Account Settings Read and Logs Edit, scoped to one target account. Optional SSO and Regional Hostname features add SSO Connector Edit and DNS Edit scoped to target zones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#0b1930"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#67e8f9"/></marker>
+    <style>
+      .title{font:700 34px system-ui,-apple-system,sans-serif;fill:#f8fafc}.sub{font:500 17px system-ui,-apple-system,sans-serif;fill:#a7b7ce}.lane{font:700 22px system-ui,-apple-system,sans-serif;fill:#e2e8f0}.scope{font:700 14px system-ui,-apple-system,sans-serif;letter-spacing:1.5px;fill:#67e8f9}.name{font:700 21px system-ui,-apple-system,sans-serif;fill:#f8fafc}.detail{font:500 16px system-ui,-apple-system,sans-serif;fill:#cbd5e1}.badge{font:800 15px system-ui,-apple-system,sans-serif;fill:#07111f}.note{font:600 16px system-ui,-apple-system,sans-serif;fill:#bfdbfe}.required{fill:#101f35;stroke:#22d3ee;stroke-width:2}.optional{fill:#151b36;stroke:#a78bfa;stroke-width:2}.arrow{fill:none;stroke:#67e8f9;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="660" rx="22" fill="url(#bg)"/><path d="M0 110H1200M0 395H1200" stroke="#24344d"/>
+  <text x="55" y="58" class="title">FedRAMP Moderate Terraform — API Token Recipes</text><text x="55" y="88" class="sub">Create a Custom API Token in the normal Cloudflare dashboard. Never place its value in Git.</text>
+  <text x="55" y="150" class="lane">Required now — CMB-only deployment</text><text x="55" y="177" class="note">Minimum permissions. Restrict the token to the intended account.</text>
+  <rect x="55" y="205" width="245" height="135" rx="16" class="required"/><text x="80" y="237" class="scope">TOKEN VALUE</text><text x="80" y="273" class="name">terraform.tfvars</text><text x="80" y="307" class="detail">Sensitive · Git-ignored</text>
+  <path d="M315 272H370" class="arrow"/>
+  <rect x="385" y="205" width="245" height="135" rx="16" class="required"/><text x="410" y="237" class="scope">ACCOUNT</text><text x="410" y="273" class="name">Account Settings</text><rect x="410" y="292" width="66" height="28" rx="14" fill="#67e8f9"/><text x="426" y="312" class="badge">READ</text>
+  <path d="M645 272H700" class="arrow"/>
+  <rect x="715" y="205" width="190" height="135" rx="16" class="required"/><text x="740" y="237" class="scope">ACCOUNT</text><text x="740" y="273" class="name">Logs</text><rect x="740" y="292" width="62" height="28" rx="14" fill="#67e8f9"/><text x="752" y="312" class="badge">EDIT</text>
+  <path d="M920 272H960" class="arrow"/>
+  <rect x="975" y="205" width="170" height="135" rx="16" class="required"/><text x="997" y="237" class="scope">RESOURCES</text><text x="997" y="272" class="name">Specific</text><text x="997" y="298" class="name">account</text><text x="997" y="325" class="detail">Target only</text>
+  <text x="55" y="438" class="lane">Optional — add only with enabled module features</text><text x="55" y="465" class="note">Do not add these permissions merely to run the CMB configuration.</text>
+  <rect x="55" y="495" width="300" height="120" rx="16" class="optional"/><text x="80" y="527" class="scope">DASHBOARD SSO · ACCOUNT</text><text x="80" y="563" class="name">SSO Connector</text><rect x="80" y="578" width="62" height="28" rx="14" fill="#a78bfa"/><text x="92" y="598" class="badge">EDIT</text>
+  <path d="M370 555H430" class="arrow"/>
+  <rect x="445" y="495" width="275" height="120" rx="16" class="optional"/><text x="470" y="527" class="scope">REGIONAL HOSTNAMES</text><text x="470" y="563" class="name">Zone · DNS</text><rect x="470" y="578" width="62" height="28" rx="14" fill="#a78bfa"/><text x="482" y="598" class="badge">EDIT</text>
+  <path d="M735 555H795" class="arrow"/>
+  <rect x="810" y="495" width="335" height="120" rx="16" class="optional"/><text x="835" y="527" class="scope">ZONE RESOURCES</text><text x="835" y="563" class="name">Specific target zones only</text><text x="835" y="594" class="detail">Only for declared hostnames</text>
+</svg>

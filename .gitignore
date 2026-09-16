@@ -16,6 +16,7 @@ docs/screenshots/
 # Publish only the self-contained Archify HTML artifacts
 docs/architecture/*
 !docs/architecture/*.html
+!docs/architecture/fedramp-moderate-terraform-permissions-and-control-flow.svg
 docs/architecture/*.visual-check.html
 
 # Optional local helpers/tests; Terraform remains self-contained in account.tf
