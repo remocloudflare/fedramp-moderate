@@ -1,0 +1,19 @@
+# Copy to terraform.tfvars and replace the account values.
+cloudflare_api_token  = "REPLACE_WITH_CLOUDFLARE_API_TOKEN"
+cloudflare_account_id = "00000000000000000000000000000000"
+expected_account_name = "replace-with-exact-account-name"
+
+# Core FedRAMP Moderate account setting.
+# This controls where customer logs/analytics metadata are stored. The module
+# validates region="us" and allow_out_of_region_access=false.
+enable_customer_metadata_boundary                     = true
+customer_metadata_boundary_region                     = "us"
+customer_metadata_boundary_allow_out_of_region_access = false
+
+# Keep disabled until the customer's email domain and SSO design are approved.
+enable_sso_connectors = false
+sso_connectors        = {}
+
+# Keep disabled until proxied zones and hostnames exist in this account.
+enable_regional_hostnames = false
+regional_hostnames        = {}
