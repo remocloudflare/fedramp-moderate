@@ -103,7 +103,13 @@ See `ONBOARDING-CHECKLIST.md` for the full operator gate.
 - [`fedramp-moderate-permissions.html`](docs/architecture/fedramp-moderate-permissions.html) — token recipes, guided permission views, search, light/dark themes, and presentation mode.
 - [`fedramp-moderate-apply-flow.html`](docs/architecture/fedramp-moderate-apply-flow.html) — the end-to-end Terraform configure, authorize, apply, and read-back animation.
 
-GitHub renders the checked-in SVG above directly in this README. It does not execute JavaScript from repository HTML previews, so download or clone the repository and open an HTML file locally to use its guided animation. The Archify source, GIF, MP4, and capture files remain local and Git-ignored.
+GitHub renders the checked-in SVG and animated GIF directly in this README. It does not execute JavaScript from repository HTML previews, so download or clone the repository and open an HTML file locally to use its guided controls. The Archify source, capture files, and other generated QA artifacts remain local and Git-ignored.
+
+### Animated apply-and-verify flow
+
+[![Animated FedRAMP Moderate Terraform apply-and-verify flow](docs/architecture/fedramp-moderate-apply-flow.gif)](docs/architecture/fedramp-moderate-apply-flow.mp4)
+
+The GitHub-playable GIF follows the current flow from configuration through least-privilege authorization and apply-time verification. Click it to open the higher-quality MP4. The animation contains only placeholders and generic resource names.
 
 Create a **Custom API Token** in the normal Cloudflare dashboard. The graphic above and linked permissions HTML show the exact permission scope, permission, access level, and resource restriction for both the current CMB-only deployment and the optional full-module features.
 
