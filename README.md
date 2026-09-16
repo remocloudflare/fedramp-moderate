@@ -107,9 +107,9 @@ GitHub renders the checked-in SVG and animated GIF directly in this README. It d
 
 ### Animated apply-and-verify flow
 
-[![Animated FedRAMP Moderate Terraform apply-and-verify flow](docs/architecture/fedramp-moderate-apply-flow.gif)](docs/architecture/fedramp-moderate-apply-flow.mp4)
+![Animated FedRAMP Moderate Terraform apply-and-verify flow](docs/architecture/fedramp-moderate-apply-flow.gif)
 
-The GitHub-playable GIF follows the current flow from configuration through least-privilege authorization and apply-time verification. Click it to open the higher-quality MP4. The animation contains only placeholders and generic resource names.
+The GitHub-playable GIF follows the current flow from configuration through least-privilege authorization and apply-time verification. Open the [higher-quality MP4](docs/architecture/fedramp-moderate-apply-flow.mp4) separately. The animation contains only placeholders and generic resource names.
 
 Create a **Custom API Token** in the normal Cloudflare dashboard. The graphic above and linked permissions HTML show the exact permission scope, permission, access level, and resource restriction for both the current CMB-only deployment and the optional full-module features.
 
